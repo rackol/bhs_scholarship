@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> src="server.js"></script>    
+    <script>
+                
+    function go(){
+        var u = document.getElementById("userName").value;
+        var p = document.getElementById("password").value;
+
+        $.ajax({
+            url : "http://localhost:3000/login",
+            type: "POST",
+            data : {userName: u, password: p},
+            success: postProcess
+        });
+    }   
+    
+    function postProcess(data,status) {
+        console.log(data);
+        console.log("Status:" + status);
+    }   
+
+</script>
+</head>
+
+<body>
+<br> 
+
+<div id="div1"></div>
+</body>
+
+
+</html>
