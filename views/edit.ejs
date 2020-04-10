@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>   
+</script>
+</head>
+<a href="/"> Go Home </a><br>
+<body background="images/dots.jpg" height="100%">
+    <style>
+            body{font-size: 20px;}
+            body{background-repeat: no-repaeat;}
+            body{background-size: 100%;}
+    </style><br>
+    <% if(name==2){%>
+        <script>
+        alert("Sorry that scholarship does nto exist, please try another name")
+    </script>
+    <%}%>    
+
+    <form action="change" method="post">
+        Edit a Scholarship:<br><br>
+        
+
+        Name of Scholarship:<input type="String" name="name"><br><br>
+        New Due Date:<input type="date" name="due"><br><br>
+        <form action="change" method="post">
+        <input type="submit" value="edit">
+    </form>
+    
+</body>
+</html>

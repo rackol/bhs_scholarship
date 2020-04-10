@@ -1,0 +1,103 @@
+
+<html>
+    <head>
+    <script>
+    </script>
+    </head>
+    <a href="/"> Go Home </a><br><br>
+    <body>
+        <style>
+            body{font-size: 20px;}
+            body{font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
+            body{background-repeat: no-repaeat;}
+            body{background-size: 100%;}
+            body{padding: 2%}
+            table{font-size: 20px;}
+            table{font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
+        </style>
+        Search for scholarships!<br><br>
+        <form action="search" method="post">
+            <table>
+                <tr>
+                    <td>
+                        Check all boxes that apply:<br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        GPA:<br><br>
+                        <input type="text" name="gpa" size="20" value=""><br><br>
+                    </td>
+                    <td>
+                        School Type:<br><br>
+                        <input type='checkbox' value="fourYear" name="type">Four Year<br>
+                        <input type='checkbox' value="twoYear" name="type">Two Year<br><br>
+                        
+                    </td>
+                </tr>
+                
+                <tr> 
+                           
+                    <td>
+                        Please check at least one of the boxes <br>for each of the following catagories:<br><br><br>
+                        Religion:<br><br>
+                        <input type='checkbox' value="christian" name="religion">Christian<br>
+                        <input type='checkbox' value="jewish" name="religion">Jewish<br>
+                        <input type='checkbox' value="muslim" name="religion">Muslim<br>
+                        <input type='checkbox' value="otherReligion" name="religion">Other Religious Affiliation<br>
+                        <input type='checkbox' value='noReligion' name='religion'>No Religious Affiliation<br><br>
+                        
+                    </td>
+                    <td>
+                        <br><br>Gender:<br><br>
+                        <input type='checkbox' value="female" name="gender">Female<br>
+                        <input type='checkbox' value="gQueer" name="gender">Gender Queer<br>
+                        <input type='checkbox' value="male" name="gender">Male<br>
+                        <input type='checkbox' value="trans" name="gender">Transgender
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>
+                        Interests/Extra Curriculars: <br><br>
+                        <input type='checkbox' value="activism" name="interests">Activism or Politics<br>
+                        <input type='checkbox' value="business" name="interests">Business Major<br>
+                        <input type='checkbox' value="service" name="interests">Community Service<br>
+                        <input type='checkbox' value="journalism" name="interests">Journalism<br>
+                        <input type='checkbox' value="sports" name="interests">Sports or Athletics<br>
+                        <input type='checkbox' value="stem" name="interests">STEM Major<br>
+                        <input type='checkbox' value="art" name="interests">Visual Art<br><br>
+                    </td> 
+                    <td>
+                        Racial Identity:<br><br>
+                        <input type='checkbox' value="native" name="race">American Indian or Alaska Native<br>
+                        <input type='checkbox' value="asian" name="race">Asian<br>
+                        <input type='checkbox' value="black" name="race">Black<br>
+                        <input type='checkbox' value="latinex" name="race">Hispanic or Latinex<br>
+                        <input type='checkbox' value="pacific" name="race">Native Hawaiian or Pacific Islander<br>
+                        <input type='checkbox' value="white" name="race">White<br><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Other:<br><br>
+                        <input type='checkbox' value="firstGen" name="other">First Generation Student<br>
+                        <input type='checkbox' value="visa" name="other">Legal Resident of the US<br>
+                        <input type='checkbox' value="lgbtq" name="other">Part of the LGBTQ+ Community<br>
+                        <input type='checkbox' value="citizen" name="other">US Citizen<br><br>
+                    </td> 
+                    <td>
+                        Type of Scholarship:<br><br>
+                        <input type='checkbox' value="merit" name="mvn">Merit<br>
+                        <input type='checkbox' value="need" name="mvn">Need<br><br><br><br>
+                    </td>   
+                        
+                </tr>
+                    <td>
+                        <input type="submit" value="Search Scholarships">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+    </html>

@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <a href="/"> Go Home </a><br>
+    <body background="images/dots.jpg" height="100%">
+    <style>
+        body{font-size: 20px;}
+        body{background-repeat: no-repaeat;}
+        body{background-size: 100%;}
+    </style>
+    <br> 
+
+    Edit a Current Scholarship:
+    <form action="edit" method="post">
+            <input type="submit" value="edit">
+    </form>
+    <form action="add" method="post">
+    Add Scholarship:<br><br>
+    Name: <input type="text" name="name" size="20" value=""><br><br>
+    Link:  <input type="text"  name="link"size="20" value=""><br><br>
+    Check all boxes that are a criteria for this scholarship<br>
+    If there is not a requirement for that section, do not click anything.<br><br>
+    <table>
+        <tr>  
+            <td>
+                Amount:<br><input type="text" name="amount" size="20" value=""><br><br>
+                Minimum GPA:<br><input type="text" name="gpa" size="20" value=""><br><br><br>
+            </td>
+            <td>
+                Due Date: <br><input type="date" name="due"><br><br>
+                Type of Scholarship:<br>
+                <input type='checkbox' value="merit" name="mvn">Merit<br>
+                <input type='checkbox' value="need" name="mvn">Need<br><br>
+            </td>  
+        </tr>
+        <tr> 
+            <td>
+            Required Gender:<br><br>
+                <input type='checkbox' value="female" name="gender">Female<br>
+                <input type='checkbox' value="gQueer" name="gender">Gender Queer<br>
+                <input type='checkbox' value="male" name="gender">Male<br>
+                <input type='checkbox' value="trans" name="gender">Transgender<br><br>
+            </td>
+            <td>
+                Required Religion:<br><br>
+                <input type='checkbox' value="christian" name="religion">Christian<br>
+                <input type='checkbox' value="jewish" name="religion">Jewish<br>
+                <input type='checkbox' value="muslim" name="religion">Muslim<br>
+                <input type='checkbox' value="otherReligion" name="religion">Other Religious Affiliation<br><br>
+            </td>
+        </tr>
+        <tr> 
+            <td>
+                Required Interests/Extra Curriculars: <br><br>
+                <input type='checkbox' value="activism" name="interests">Activism or Politics<br>
+                <input type='checkbox' value="business" name="interests">Business Major<br>
+                <input type='checkbox' value="service" name="interests">Community Service<br>
+                <input type='checkbox' value="journalism" name="interests">Journalism<br>
+                <input type='checkbox' value="sports" name="interests">Sports or Athletics<br>
+                <input type='checkbox' value="art" name="interests">Visual Art<br><br><br>
+            </td> 
+            <td>
+                Required Race:<br><br>
+                <input type='checkbox' value="native" name="race">American Indian or Alaska Native<br>
+                <input type='checkbox' value="asian" name="race">Asian<br>
+                <input type='checkbox' value="black" name="race">Black<br>
+                <input type='checkbox' value="latinex" name="race">Hispanic or Latinex<br>
+                <input type='checkbox' value="pacific" name="race">Native Hawaiian or Pacific Islander<br>
+                <input type='checkbox' value="white" name="race">White<br>
+                <input type='checkbox' value="otherRace" name="race">Other<br><br>
+            </td>
+        </tr>
+        <tr> 
+            <td>
+                Other Requirements:<br><br> 
+                <input type='checkbox' value="firstGen" name="other">First Generation Student<br>
+                <input type='checkbox' value="visa" name="other">Legal resident of the US<br>
+                <input type='checkbox' value="lgbtq" name="other">Part of the LGBTQ+ Community<br>
+                <input type='checkbox' value="citizen" name="other">US Citizen<br><br>
+            </td>   
+            <td>
+                Required School Type:<br><br>
+                <input type='checkbox' value="fourYear" name="type">Four Year<br>
+                <input type='checkbox' value="twoYear" name="type">Two Year<br><br>
+                <br><br>
+            </td>
+        </tr>
+            <td>
+                <input type="submit" value="Add Scholarship" >
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

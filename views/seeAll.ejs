@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <style>
+            body{font-size: 20px;}
+            table{font-size: 20px;}
+            td{ padding:15px 8px;}
+    </style>
+
+<a href="/"> GO HOME </a><br>
+<table>
+    <tr> 
+        <td>Name:</td>
+        <td>Amount:</td>
+        <td>Due Date:</td>
+    </tr>
+    <% for(var i =0; i<results.length; i++) { %>
+    <tr> 
+        <td>
+            <a href=<%=results[i].link %>><%=results[i].name %></a> </td>
+        <td> 
+            <%=results[i].amount %></td>
+        <td> 
+            <%=results[i].due.toString().substr(0,16)%></td>
+    </tr>
+    <% } %>
+</table>
+</body>
+</html>

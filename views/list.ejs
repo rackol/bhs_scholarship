@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <style>
+            body{font-size: 20px;}
+            table{font-size: 20px;}
+            td{ padding:15px 8px;}
+    </style>
+    <a href="/"> Go Home </a><br><br>
+    <% if(goodS.length==0) { %>
+        Sorry your search had no results, please try again.
+    <% }else{ %>
+    Here are the Scholarships that you may qualify for:<br><br>
+    <table>
+        <tr> 
+            <td>Name:</td>
+            <td>Amount:</td>
+            <td>Due Date:</td>
+        </tr>
+        <% for(var i =0; i< goodS.length; i++) { %>
+        <tr> 
+            <td>
+                <a href=<%=goodS[i].link %>><%=goodS[i].name %></a> </td>
+            <td> 
+                <%=goodS[i].amount %></td>
+            <td> 
+                <%=goodS[i].due.toString().substr(0,16)%></td>
+        </tr>
+        <% } %>
+    </table>
+    <% }%>
+</body>
+</html>
